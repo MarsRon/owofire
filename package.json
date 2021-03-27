@@ -1,0 +1,20 @@
+{
+	"name": "owofire",
+	"version": "1.0.0",
+	"description": "A simple text OwOifier! owo",
+	"author": "MarsRon",
+	"license": "MIT",
+	"homepage": "https://github.com/MarsRon/owofire#readme",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": ["owo", "uwu", "owoifier", "cute"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MarsRon/owofire.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MarsRon/owofire/issues"
+	}
+}
