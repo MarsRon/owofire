@@ -14,9 +14,9 @@ npm i owofire
 ## Usage
 
 ```js
-const owo = require("owofire");
+const owofire = require("owofire");
 
-console.log(owo("MarsRon made this NPM package"));
+console.log(owofire("MarsRon made this NPM package"));
 
 // MawsWon made dis npm package uwu
 ```

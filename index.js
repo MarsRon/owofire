@@ -30,7 +30,7 @@ function owofire(input) {
 	
 	// Prevent duplicate kaomoji at the end of the string
 	if (!input.endsWith("!"))
-		owoified += " " + kaomoji[Math.floor(Math.random() * kaomoji.length)];
+		owoified += ` ${kaomoji[Math.floor(Math.random() * kaomoji.length)]}`;
 	
 	return owoified;
 }
