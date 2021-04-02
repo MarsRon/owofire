@@ -10,7 +10,12 @@
 	"scripts": {
 		"test": "node cli.js MarsRon made this NPM package"
 	},
-	"keywords": ["owo", "uwu", "owoifier", "cute"],
+	"keywords": [
+		"owo",
+		"uwu",
+		"owoifier",
+		"cute"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/MarsRon/owofire.git"

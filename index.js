@@ -26,7 +26,7 @@ function owofire(input) {
 		.replace(/:o/g, "owo")
 		.replace(/:D/g, "UwU")
 		.replace(/XD/g, "X3")
-		.replace(/xD/g, "x3")
+		.replace(/xD/g, "x3");
 	
 	// Prevent duplicate kaomoji at the end of the string
 	if (!input.endsWith("!"))
