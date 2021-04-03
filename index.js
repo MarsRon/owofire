@@ -1,9 +1,13 @@
-const kaomoji = ["(o´∀`o)", "(#｀ε´)", "(๑•̀ㅁ•́๑)✧", "(*≧m≦*)", "(・`ω´・)", "UwU", "OwO", ">w<", "｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡", "ヾ(｀ε´)ﾉ", "(´• ω •`)", "o(>ω<)o", "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧", "(⁀ᗢ⁀)", "(￣ε￣＠)", "( 〃▽〃)", "(o^ ^o)", "ヾ(*'▽'*)", "(*^ω^)", "(◕‿◕✿)", "(◕ᴥ◕)", "ʕ•ᴥ•ʔ", "ʕ￫ᴥ￩ʔ", "(*^.^*)", "owo", "(｡♥‿♥｡)", "uwu", "(*￣з￣)", ">w<", "^w^", "(つ✧ω✧)つ", "(/ =ω=)/"];
+var kaomoji = ["(o´∀`o)", "(#｀ε´)", "(๑•̀ㅁ•́๑)✧", "(*≧m≦*)", "(・`ω´・)", "UwU", "OwO", ">w<", "｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡", "ヾ(｀ε´)ﾉ", "(´• ω •`)", "o(>ω<)o", "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧", "(⁀ᗢ⁀)", "(￣ε￣＠)", "( 〃▽〃)", "(o^ ^o)", "ヾ(*'▽'*)", "(*^ω^)", "(◕‿◕✿)", "(◕ᴥ◕)", "ʕ•ᴥ•ʔ", "ʕ￫ᴥ￩ʔ", "(*^.^*)", "owo", "(｡♥‿♥｡)", "uwu", "(*￣з￣)", ">w<", "^w^", "(つ✧ω✧)つ", "(/ =ω=)/"];
+
+function getKaomoji() {
+	return kaomoji[Math.floor(Math.random() * kaomoji.length)];
+}
 
 function owofire(input) {
-	let owoified = input
-		.replace(/(?:l|r)/g, "w")
-		.replace(/(?:L|R)/g, "W")
+	var owoified = input
+		.replace(/l|r/g, "w")
+		.replace(/L|R/g, "W")
 		.replace(/n([aeiou])/g, "ny$1")
 		.replace(/N([aeiou])/g, "Ny$1")
 		.replace(/N([AEIOU])/g, "NY$1")
@@ -11,7 +15,7 @@ function owofire(input) {
 		.replace(/OVE/g, "UV")
 		.replace(/nd(?= |$)/g, "ndo")
 		.replace(/z(?:\s)/, "z~")
-		.replace(/(?<=[^@])!+/g, `! ${kaomoji[Math.floor(Math.random() * kaomoji.length)]}`)
+		.replace(/([^@])!+/g, `$1! ${getKaomoji()}`)
 		.replace(/nd(?= |$)/g, "ndo")
 
 		.replace(/\?/g, " uwu?")
@@ -27,11 +31,11 @@ function owofire(input) {
 		.replace(/:D/g, "UwU")
 		.replace(/XD/g, "X3")
 		.replace(/xD/g, "x3");
-	
+
 	// Prevent duplicate kaomoji at the end of the string
 	if (!input.endsWith("!"))
-		owoified += ` ${kaomoji[Math.floor(Math.random() * kaomoji.length)]}`;
-	
+		owoified += ` ${getKaomoji()}`;
+
 	return owoified;
 }
 
