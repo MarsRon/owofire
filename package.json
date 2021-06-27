@@ -1,26 +1,26 @@
 {
-	"name": "owofire",
-	"version": "1.0.4",
-	"description": "A simple text OwOifier! owo",
-	"author": "MarsRon",
-	"license": "MIT",
-	"homepage": "https://github.com/MarsRon/owofire#readme",
-	"main": "index.js",
-	"bin": "cli.js",
-	"scripts": {
-		"test": "node cli.js MarsRon made this NPM package"
-	},
-	"keywords": [
-		"owo",
-		"uwu",
-		"owoifier",
-		"cute"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MarsRon/owofire.git"
-	},
-	"bugs": {
-		"url": "https://github.com/MarsRon/owofire/issues"
-	}
+  "name": "owofire",
+  "version": "1.0.4",
+  "description": "A simple text OwOifier! owo",
+  "author": "MarsRon",
+  "license": "MIT",
+  "homepage": "https://github.com/MarsRon/owofire#readme",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "node cli.js MarsRon made this NPM package"
+  },
+  "keywords": [
+    "owo",
+    "uwu",
+    "owoifier",
+    "cute"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarsRon/owofire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarsRon/owofire/issues"
+  }
 }
